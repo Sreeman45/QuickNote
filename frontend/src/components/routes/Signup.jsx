@@ -20,7 +20,7 @@ const [password,setPassword]=useState('')
 const navigate = useNavigate();
   const handleSubmit=(e)=>{
     e.preventDefault();
-  
+    console.log(email,password,fullname)
     fetch('/users/signup',{
     method:'POST',
     headers:{

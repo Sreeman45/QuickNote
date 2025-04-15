@@ -1,10 +1,7 @@
 
-import Notesboxes from '../notes';
-import { Searchbar } from '../searchbar';
+
 import Sidebar from '../sidebar';
 import Sort from '../sort';
-import Speechrecognition from '../translateapi';
-import { Link } from 'react-router-dom';
 import Masti from './masti';
 import { useState,createContext } from 'react';
 export const emailcontext=createContext()
@@ -19,7 +16,7 @@ export default function HomePage() {
             <Sidebar/>
             <Masti/>
             <Sort />
-           </emailcontext.Provider>
+           </emailcontext.Provider> 
         </main>
     )
 }

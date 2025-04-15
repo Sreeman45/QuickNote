@@ -13,7 +13,7 @@ export default function Cards(){
     return(
         <div className="flex flex-wrap gap-x-6 gap-y-4 overflow-y-scroll no-scrollbar">
          {
-           notes.length && notes.filter((note)=>note.title.toLowerCase().includes(search) || note.description.toLowerCase().includes(search)).map((note,i)=>{
+           notes.length > 0 && notes.filter((note)=>note.title.toLowerCase().includes(search) || note.description.toLowerCase().includes(search)).map((note,i)=>{
                 const date=new Date(note.createdAt).toLocaleDateString();
 
             return <Alert key={i} id={note._id} email={email} title={note.title} description={note.description} date={date}/>

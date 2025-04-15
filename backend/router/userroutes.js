@@ -1,7 +1,6 @@
 import {Router} from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import cookieParser from 'cookie-parser';
 const router=Router()
 import userSchema from '../model/authentication.js';
 const key='@123@123';
