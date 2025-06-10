@@ -4,14 +4,6 @@ import { checkAuth } from "@/auth/auth";
 import { useNavigate } from "react-router-dom";
 import { ChevronUp } from "lucide-react";
 import { emailcontext } from "./routes/HomePage";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const value = 99;
 export default function Sidebar() {
@@ -77,7 +69,7 @@ export default function Sidebar() {
                 className="hover:border-[1.5px] hover:bg-gray-400 rounded text-gray-800 text-lg sm:text-xl px-2 sm:px-4 py-1 cursor-pointer hover:-translate-y-1 min-w-2 inline-flex"
                 onClick={() => setLogout(!logout)}
               >
-                {data.fullname.split(" ")[0].slice(0, 7)}{" "}
+                {data.fullname.slice(0, 7)}
                 <ChevronUp className="ml-1" /> 
               </button>
             </div>

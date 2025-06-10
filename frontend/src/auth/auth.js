@@ -10,7 +10,7 @@ const checkAuth=async(url,options)=>{
    return data
 }
 catch(err){
-    return null
+    return {success:false}
 }
 
 }

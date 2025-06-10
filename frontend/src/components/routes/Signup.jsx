@@ -20,7 +20,7 @@ const [password,setPassword]=useState('')
 const navigate = useNavigate();
   const handleSubmit=(e)=>{
     e.preventDefault();
-    console.log(email,password,fullname)
+ 
     fetch('/users/signup',{
     method:'POST',
     headers:{
@@ -31,7 +31,7 @@ const navigate = useNavigate();
       email,
       password
     })}).then(res=>res.json()).then(data=>{
-        console.log(data)
+     
          if(data.success){
           console.log(data)
           handleSuccess('Sucessfully created an account')
